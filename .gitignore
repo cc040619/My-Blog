@@ -40,3 +40,7 @@ replay_pid*
 .env.production.local
 
 application-dev.yml
+
+# dist,build(all)
+dist/
+build/
