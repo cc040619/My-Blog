@@ -23,8 +23,8 @@ mybatis-plus:
 
 aliyun:
   oss:
-    endpoint: ${ALIYUN_OSS_ENDPOINT}
-    bucketName: ${ALIYUN_OSS_BUCKET_NAME}
-    region: ${ALIYUN_OSS_REGION}
-    accessKeyId: ${ALIYUN_OSS_ACCESS_KEY_ID}
-    accessKeySecret: ${ALIYUN_OSS_ACCESS_KEY_SECRET}
+    endpoint: 你的oss的endpoint
+    bucketName: 你的oss的bucketName
+    region: 你的oss的地域
+    accessKeyId: 你的oss的密钥id
+    accessKeySecret: 你的oss的密钥密码
