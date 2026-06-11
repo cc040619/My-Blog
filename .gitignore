@@ -43,4 +43,3 @@ application-dev.yml
 
 # dist,build(all)
 dist/
-build/
