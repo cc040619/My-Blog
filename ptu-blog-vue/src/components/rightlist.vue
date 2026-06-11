@@ -381,8 +381,8 @@ export default {
   right: 40px;
   top: -150px;
   z-index: 99;
-  width: 316px;
-  height: 900px;
+  width: 230px;
+  height: 950px;
   transition: all 0.5s 0.3s ease-in-out;
   cursor: pointer;
 }
