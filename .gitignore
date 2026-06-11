@@ -1,0 +1,22 @@
+# Maven
+target/
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env files (keep .example templates)
+.env
+.env.local
+.env.development.local
+.env.production.local
