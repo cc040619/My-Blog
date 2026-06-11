@@ -38,3 +38,5 @@ replay_pid*
 .env.local
 .env.development.local
 .env.production.local
+
+*.yml
