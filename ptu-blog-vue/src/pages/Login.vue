@@ -1,15 +1,5 @@
-<!--
-  登录 / 注册页面 - 牛皮纸复古简约风格
-  视觉体系：褶皱浅牛皮纸背景 + 米白卡纸表单 + 浅天蓝主色
-  与博客首页温暖复古调性完全统一
--->
 <template>
   <div class="login-page">
-    <!-- 左侧撕纸毛边装饰 -->
-    <div class="tear-edge tear-left"></div>
-    <!-- 右侧撕纸毛边装饰 -->
-    <div class="tear-edge tear-right"></div>
-
     <!-- 表单卡片容器 -->
     <div class="form-card">
       <!-- ===== 标题区 ===== -->
@@ -381,82 +371,17 @@ export default {
 </script>
 
 <style scoped>
-/* ============================================================
-   牛皮纸复古风格 — 全局色彩变量（统一抽离，方便后期改色）
-   ============================================================
-   主背景色：#E9E2D6  褶皱牛皮纸底色（与博客首页统一）
-   卡片底色：#F7F3EC  哑光米白卡纸
-   主强调色：#90D4F7  柔和天蓝（按钮、激活边框）
-   主文字色：#333333  深炭灰
-   辅助文字：#777777  浅灰
-   禁用底色：#DDD9D0  浅米灰
-   ============================================================ */
-
-/* ----- 页面全屏容器 ----- */
+/* ----- 页面全屏容器：使用 login.jpg 底板 ----- */
 .login-page {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* 褶皱牛皮纸底层：多层径向渐变模拟纸张纤维褶皱肌理 */
-  background:
-    /* 顶光褶皱 */ radial-gradient(ellipse at 30% 20%, rgba(255, 252, 245, 0.5) 0%, transparent 60%),
-    /* 底光暗角 */ radial-gradient(ellipse at 70% 80%, rgba(220, 212, 195, 0.6) 0%, transparent 60%),
-    /* 纸张纤维条纹 */ repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(200, 190, 170, 0.08) 2px,
-      rgba(200, 190, 170, 0.08) 4px
-    ),
-    /* 不规则明暗斑块 */ radial-gradient(ellipse at 15% 40%, rgba(235, 225, 205, 0.5) 0%, transparent 40%),
-    radial-gradient(ellipse at 85% 60%, rgba(245, 238, 225, 0.4) 0%, transparent 40%),
-    /* 基底牛皮纸色 */ #e9e2d6;
+  background: url('/static/img/login.jpg') center / cover no-repeat;
   font-family: 'Inter', 'Noto Sans SC', '思源黑体', 'Source Han Sans CN', -apple-system, BlinkMacSystemFont,
     'Segoe UI', sans-serif;
   overflow: hidden;
-}
-
-/* ----- 左右撕纸毛边装饰（与博客首页统一） ----- */
-.tear-edge {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 28px;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.35;
-}
-.tear-left {
-  left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.2) 4px,
-    transparent 6px,
-    rgba(200, 190, 170, 0.2) 10px,
-    transparent 14px,
-    rgba(255, 255, 255, 0.15) 18px,
-    transparent 22px,
-    rgba(200, 190, 170, 0.1) 26px,
-    transparent 28px
-  );
-}
-.tear-right {
-  right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.2) 4px,
-    transparent 6px,
-    rgba(200, 190, 170, 0.2) 10px,
-    transparent 14px,
-    rgba(255, 255, 255, 0.15) 18px,
-    transparent 22px,
-    rgba(200, 190, 170, 0.1) 26px,
-    transparent 28px
-  );
 }
 
 /* ----- 表单卡片容器（哑光米白卡纸质感） ----- */
@@ -649,9 +574,6 @@ export default {
   }
   .submit-btn {
     margin-top: 22px;
-  }
-  .tear-edge {
-    width: 16px;
   }
 }
 </style>
