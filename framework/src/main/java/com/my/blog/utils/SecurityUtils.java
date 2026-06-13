@@ -29,7 +29,10 @@ public class SecurityUtils {
         if (authentication == null || authentication.getPrincipal() == null) {
             return null;
         }
-        return (LoginUser) authentication.getPrincipal();
+        if (authentication.getPrincipal() instanceof LoginUser) {
+            return (LoginUser) authentication.getPrincipal();
+        }
+        return null;
     }
 
     /**
