@@ -18,4 +18,6 @@ public interface IUserService extends IService<User> {
 
     ResponseResult updateUserInfo(User user);
 
+    ResponseResult register(User user);
+
 }

@@ -50,6 +50,8 @@ public class SecurityConfig {
                 .authorizeRequests()
                 // 登录接口允许匿名访问
                 .antMatchers("/login").anonymous()
+                // 注册接口允许匿名访问
+                .antMatchers("/user/register").anonymous()
                 // 发表评论接口需要认证才能访问
                 .antMatchers("/comment").authenticated()
                 // 友链接口需授权访问（用于JWT过滤器测试）

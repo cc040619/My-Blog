@@ -9,7 +9,14 @@ public enum AppHttpCodeEnum {
     PHONENUMBER_EXIST(502, "手机号已存在"),
     EMAIL_EXIST(503, "邮箱已存在"),
     REQUIRE_USERNAME(504, "必需填写用户名"),
-    LOGIN_ERROR(505, "用户名或密码错误");
+    LOGIN_ERROR(505, "用户名或密码错误"),
+    USERNAME_NOT_NULL(510, "用户名不能为空"),
+    NICKNAME_NOT_NULL(511, "昵称不能为空"),
+    PASSWORD_NOT_NULL(512, "密码不能为空"),
+    EMAIL_NOT_NULL(513, "邮箱不能为空"),
+    NICKNAME_EXIST(514, "昵称已存在"),
+    FILE_TYPE_ERROR(507, "文件类型错误，请上传png|jpg文件"),
+    FILE_SIZE_ERROR(508, "文件大小超出限制");
     int code;
     String msg;
 
