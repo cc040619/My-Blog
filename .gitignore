@@ -41,5 +41,5 @@ replay_pid*
 
 application-dev.yml
 
-# dist,build(all)
+# dist(all)
 dist/
