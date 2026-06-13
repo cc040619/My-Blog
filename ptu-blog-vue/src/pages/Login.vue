@@ -421,13 +421,13 @@ export default {
 .form-switch {
   font-size: 13px;
   font-weight: 400;
-  color: #90d4f7;
+  color: #60A9D0;
   cursor: pointer;
   user-select: none;
   transition: color 0.2s ease;
 }
 .form-switch:hover {
-  color: #6bb5d8;
+  color: #428FBB;
 }
 
 /* ----- 表单字段组 ----- */
