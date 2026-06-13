@@ -391,13 +391,15 @@ export default {
   width: 100%;
   max-width: 420px;
   margin: 0 16px;
-  background: #f7f3ec;
-  border-radius: 8px;
-  /* 极淡纸张压印阴影：模拟厚卡纸微微浮于牛皮纸上的立体感 */
+  /* 毛玻璃质感：半透白 + 模糊背景 */
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
   box-shadow:
-    0 1px 3px rgba(180, 170, 150, 0.18),
-    0 4px 12px rgba(160, 150, 130, 0.12),
-    0 12px 32px rgba(140, 130, 110, 0.08);
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 4px rgba(0, 0, 0, 0.04);
   padding: 36px 32px;
 }
 
@@ -449,8 +451,8 @@ export default {
   padding: 0 14px;
   font-size: 15px;
   color: #333333;
-  background: #fcfaf6;
-  border: 1.5px solid #ccc8bf;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   outline: none;
   box-sizing: border-box;
